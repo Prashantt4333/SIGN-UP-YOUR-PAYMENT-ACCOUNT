@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>payement sign up</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+           .myform{
+            width: 30%;
+            height: 600px;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+            padding: 15px;
+           } 
+           .stepbox {
+            height: 80px;
+            border: 1px solid red;
+            margin-bottom: 20px;
+           }
+           form h3,p {
+            text-align: center;
+           }
+          .left{
+            float: left;
+          }
+          .right{
+            float: right;
+          }
+          .progresbar{
+            width: 100%;
+            height: 20px;
+            background-color: #6753D8;
+            margin-top: 60px;
+            width: 25%;
+          }
+          .clearfix{
+            clear: both;
+          }
+          .myinput{
+            background-color: #F8F8F8;
+            border: none;
+            width: 90%;
+            height: 30px;
+            padding: 0px 10px;
+          }
+          .movedown{
+            margin: 30px 0px;
+          }
+          .myform input[type="button"]{
+            float: right;
+            background-color:#6753D8;
+            border: none;
+            padding: 8px 40px;
+            color: #fff;
+            border-radius: 5px;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <form class="myform">
+            <h3>SIGN UP YOUR PAYMENT ACCOUNT</h3>
+            <p class="span">Fill all form field to go next step</p>
+            <div class="stepbox">
+                <div class="progresbar"></div>
+            </div>
+            <div class="step1">
+                <strong class="left" style="color:#6753D8 ;">Account Information:</strong>
+                <span class="right">Step 1- 4</span>
+            </div>
+            <div class="clearfix"></div>
+            <div class="movedown">
+                <label class="" for="in">Email: *</label>
+                <input class="myinput" type="email" placeholder="Email" id="in" />
+            </div>
+            <div class="movedown">
+                <label class="" for="user">User Name: *</label>
+                <input class="myinput" type="name" placeholder="User Name" id="user" />
+            </div>
+            <div class="movedown">
+                <label class="" for="pass">Password: *</label>
+                <input class="myinput" type="password" placeholder="Password" id="pass" />
+            </div>
+            <div class="movedown">
+                <label class="" for="CP">Confirm Password: *</label>
+                <input class="myinput" type="password" placeholder="Confirm Password" id="CP" />
+            </div>
+            <input type="button" name="next" value="Next" />
+        </form>
+    </body>
+</html>
